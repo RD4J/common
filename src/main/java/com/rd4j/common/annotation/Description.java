@@ -3,7 +3,7 @@ package com.rd4j.common.annotation;
 import java.lang.annotation.*;
 
 /**
- * 描述<br>
+ * 文档描述<br>
  *
  * @author shaon zhang (shaon.zhang@qq.com)
  */
