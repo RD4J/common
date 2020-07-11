@@ -82,6 +82,7 @@ public class MethodCatchExceptionAspect {
     }
 
     private static void printLog(Logger logger, String methodName, Throwable throwable, UnifyCustomException unifyCustomException) {
+        // TODO 打印方法请求参数
         if (null == unifyCustomException || Check.isNull(unifyCustomException.logPrintLevel())) {
             logger.error(Formatter.message("调用{}方法异常.", methodName), throwable);
             return;

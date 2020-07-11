@@ -20,6 +20,7 @@ public class Objects {
      * 序列化对象
      *
      * @param object 需要序列化的对象
+     * @param <S>    继承Serializable的类
      *
      * @return 返回序列化后的byte数组
      */
@@ -40,6 +41,7 @@ public class Objects {
      * 序列化对象为Base64字符串
      *
      * @param object 需要序列化的对象
+     * @param <S>    继承Serializable的类
      *
      * @return 返回序列化后的Base64字符串
      */
@@ -53,7 +55,7 @@ public class Objects {
      * 反序列化为对象
      *
      * @param bytes byte数组
-     * @param <T> Serializable对象
+     * @param <T>   Serializable对象
      *
      * @return 反序列化对象
      */
@@ -66,11 +68,12 @@ public class Objects {
             throw new WrappedRuntimeException(e);
         }
     }
+
     /**
      * 反序列化为对象
      *
      * @param base64 base64字符串
-     * @param <T> Serializable对象
+     * @param <T>    Serializable对象
      *
      * @return 反序列化对象
      */
